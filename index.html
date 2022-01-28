@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css"/>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css" />
 
-    <title>Checklist</title>
-</head>
-<body>
-<header>
-  <nav>
-    <img src="./images/idwal.png" alt="logo" />
-<textarea>
-    Vessel:
-</textarea>
-<textarea>
-Inspection number:
-</textarea>
-<textarea>
-    1
-</textarea>
-  </nav>
-</header>
+        <title>Checklist</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="./images/idwal.png" alt="logo" />
+                <textarea>
+                    Vessel:
+                </textarea>
+                <textarea>
+                    Inspection number:
+                </textarea>
+                <textarea>
+                    1
+                </textarea>
+            </nav>
+        </header>
 
-<section class="checklist">
-<h2 class="title">Hull</h2>
-<p class="number">3</p>
+        <section class="checklist">
+            <h2 class="title">Hull</h2>
+            <p class="number">3</p>
 
-<section class="subTitle">
-<h3>Hull Condition</h3>
-<h5 class="subSection">3.1</h5>
-</section>
-<form method="post" action="/Tests/Post/">
-    <fieldset>
-        <legend>What sections of the hull were inspected?</legend>
-        <input type="checkbox" name="hull" value="Port side">Port side<br>
-        <input type="checkbox" name="hull" value="Stbd side">Stbd side<br>
-        <input type="checkbox" name="hull" value="All round(alongside)">All round (alongside)<br>
-        <input type="checkbox" name="hull" value="All round(at anchor)">All round (at anchor)<br>
-    </fieldset>
-    <fieldset>
-        <legend>Was the vessel free of any major structural damage or indentations?</legend>
-         <input type="checkbox" name="damage" value="yes">Yes<br>
-         <input type="checkbox" name="damage" class="no" value="no" onclick="myFunction()">No<br>
-       <textarea name="issue" aria-label="issue"class="textArea" style="display:none">
-        Major structural issue were noted such as:</textarea>
-    </fieldset>
-    <fieldset>
-    <legend>Was the vessel free of any minor structural damage or indentations?</legend>
-    <input type="checkbox" name="damage" value="yes">Yes<br>
-    <input type="checkbox" name="damage" class="no" value="no" onclick="myFunction()">No<br>
+            <section class="subTitle">
+                <h3>Hull Condition</h3>
+                <h5 class="subSection">3.1</h5>
+            </section>
+            <form method="post" action="/Tests/Post/">
+                <fieldset>
+                    <legend>What sections of the hull were inspected?</legend>
+                    <input type="checkbox" name="hull" value="Port side">Port
+                    side<br>
+                    <input type="checkbox" name="hull" value="Stbd side">Stbd
+                    side<br>
+                    <input type="checkbox" name="hull" value="All
+                        round(alongside)">All round (alongside)<br>
+                    <input type="checkbox" name="hull" value="All round(at
+                        anchor)">All round (at anchor)<br>
+                </fieldset>
+                <fieldset>
+                    <legend>Was the vessel free of any major structural damage
+                        or indentations?</legend>
+                    <input type="checkbox" name="damage" value="yes">Yes<br>
+                    <input type="checkbox" name="damage" class="no" value="no"
+                        onclick="myFunction()">No<br>
+                    <textarea name="issue" aria-label="issue" class="textArea"
+                        style="display:none">
+                        Major structural issue were noted such as:</textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Was the vessel free of any minor structural damage
+                        or indentations?</legend>
+                    <input type="checkbox" name="damage" value="yes">Yes<br>
+                    <input type="checkbox" name="damage" class="no" value="no"
+                        onclick="myFunction()">No<br>
 
-       <textarea name="issue" aria-label="issue"class="textArea" style="display:none">
-        Minor structural issue were noted such as:</textarea>
-</fieldset>
-    <fieldset>
-        <legend>Was the level of hull coating breakdown?</legend>
-         <input type="checkbox" name="coating" value="none">None<br>
-         <input type="checkbox" name="coating" value="minor">Minor<br>
-         <input type="checkbox" name="coating" value="moderate">Moderate<br>
-         <input type="checkbox" name="coating" value="high">High<br>
-
-
-    </fieldset>
-</form>
-</section>
-<footer>
- <p>WWW.IDWALMARINE.COM</p>
-</footer>
-</body>
-<script src="./main.js"></script>
+                    <textarea name="issue" aria-label="issue" class="textArea"
+                        style="display:none">
+                        Minor structural issue were noted such as:</textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Was the level of hull coating breakdown?</legend>
+                    <input type="checkbox" name="coating" class="coating"
+                        value="none">None<br>
+                    <input type="checkbox" name="coating" class="coating"
+                        value="minor">Minor<br>
+                    <input type="checkbox" name="coating" class="coating"
+                        value="moderate">Moderate<br>
+                    <input type="checkbox" name="coating" class="caoting"
+                        value="high">High<br>
+                    <textarea name="text" aria-label="text" class="textBox">
+                        Coating breakdown was observed due to:</textarea>
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            <p>WWW.IDWALMARINE.COM</p>
+        </footer>
+    </body>
+    <script src="./main.js"></script>
 </html>
